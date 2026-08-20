@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: securevault
+    runtime: node
+    rootDir: .
+    buildCommand: cd frontend && npm install && npm run build && cd ../backend && npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 5000
