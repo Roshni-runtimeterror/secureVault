@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/navbar.jsx';
-import Dashboard from './components/dashboard.jsx';
+import navbar from './components/navbar.jsx';
+import dashboard from './components/dashboard.jsx';
 import FileVault from './components/FileVault.jsx';
 import UploadModal from './components/UploadModal.jsx';
-import LandingPage from './components/landingpage.jsx';
-import SharedFileView from './components/sharedFileView.jsx';
+import landingPage from './components/landingpage.jsx';
+import sharedFileView from './components/sharedFileView.jsx';
 import { ShieldCheck, Lock, CheckCircle2, AlertTriangle, Info, Shield, RefreshCw, User, Eye, EyeOff } from 'lucide-react';
 
 export default function App() {
